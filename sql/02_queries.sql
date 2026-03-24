@@ -1,6 +1,6 @@
 -- ============================================================
--- NOVADATA ANALYTICS | CASE STUDY SQL QUERIES
--- Client: Hope Forward NGO (Simulated)
+-- NOVA DATA ANALYTICS | CASE STUDY SQL QUERIES
+-- Client: THRIVEBRIDGE NGO (Simulated)
 -- Focus:  Donor & Funding Data Management
 -- DB:     SQLite-compatible (also runs on PostgreSQL / MySQL)
 -- ============================================================
