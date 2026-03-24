@@ -57,9 +57,7 @@ novadata-ngo-case-study/
 │
 ├── r/
 │   └── analysis.R              ← Full R analysis + 5 ggplot2 charts
-│
-└── docs/
-    └── novadata_ngo_case_study.docx   ← Full case study document
+
 ```
 
 ---
