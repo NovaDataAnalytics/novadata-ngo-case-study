@@ -1,5 +1,5 @@
 # Data Dictionary
-### Novadata Analytics | Hope Forward NGO Case Study
+### Novadata Analytics | ThriveBridge NGO Case Study
 
 This document defines every column in the two database tables and their corresponding CSV files.
 
