@@ -84,13 +84,13 @@ p1 <- ggplot(annual, aes(x=factor(year), y=total, group=1)) +
   scale_y_continuous(labels=label_dollar(prefix="ZAR ", suffix="", scale=1e-6, accuracy=0.1,
                                           big.mark=","),
                      expand=expansion(mult=c(0.05,0.20))) +
-  labs(title="Annual Donation Revenue — Hope Forward NGO",
+  labs(title="Annual Donation Revenue — ThriveBridge NGO",
        subtitle="Total funds received per year (2020–2024)",
        x="Year", y="Total Funding (ZAR Millions)",
-       caption="Source: Novadata Analytics | Simulated dataset for illustration") +
+       caption="Source: Nova Data Analytics | Simulated dataset for illustration") +
   base_theme
 
-ggsave("/home/claude/novadata_case_study/chart1_annual_trend.png", p1,
+ggsave("chart1_annual_trend.png", p1,
        width=9, height=5.5, dpi=150, bg="white")
 cat("Chart 1 saved\n")
 
@@ -112,10 +112,10 @@ p2 <- ggplot(by_type, aes(x=reorder(donor_type, total), y=total, fill=donor_type
   labs(title="Funding Breakdown by Donor Type",
        subtitle="Which donor segments generate the most revenue?",
        x=NULL, y="Total Funding (ZAR Millions)",
-       caption="Source: Novadata Analytics | Simulated dataset for illustration") +
+       caption="Source: Nova Data Analytics | Simulated dataset for illustration") +
   base_theme
 
-ggsave("/home/claude/novadata_case_study/chart2_donor_type.png", p2,
+ggsave("chart2_donor_type.png", p2,
        width=9, height=5, dpi=150, bg="white")
 cat("Chart 2 saved\n")
 
@@ -131,11 +131,11 @@ p3 <- ggplot(by_fund_year, aes(x=factor(year), y=total, fill=fund)) +
   labs(title="Programme Fund Allocation Over Time",
        subtitle="How donor money is directed across programme areas",
        x="Year", y="Total Funding (ZAR Millions)",
-       caption="Source: Novadata Analytics | Simulated dataset for illustration") +
+       caption="Source: Nova Data Analytics | Simulated dataset for illustration") +
   base_theme +
   theme(legend.position="right")
 
-ggsave("/home/claude/novadata_case_study/chart3_fund_allocation.png", p3,
+ggsave("chart3_fund_allocation.png", p3,
        width=9, height=5.5, dpi=150, bg="white")
 cat("Chart 3 saved\n")
 
@@ -166,10 +166,10 @@ p4 <- ggplot(retention, aes(x=years_since, y=retention_pct,
   labs(title="Donor Retention by Cohort",
        subtitle="Percentage of donors from each acquisition year who gave again",
        x="Years Since First Gift", y="Retention Rate",
-       caption="Source: Novadata Analytics | Simulated dataset for illustration") +
+       caption="Source: Nova Data Analytics | Simulated dataset for illustration") +
   base_theme
 
-ggsave("/home/claude/novadata_case_study/chart4_retention.png", p4,
+ggsave("chart4_retention.png", p4,
        width=9, height=5.5, dpi=150, bg="white")
 cat("Chart 4 saved\n")
 
@@ -189,10 +189,10 @@ p5 <- ggplot(seasonal, aes(x=month_lab, y=total)) +
   labs(title="Monthly Donation Seasonality",
        subtitle="Nov–Dec (orange) show consistent year-end giving surges",
        x="Month", y="Total Donations (ZAR Millions)",
-       caption="Source: Novadata Analytics | Simulated dataset for illustration") +
+       caption="Source: Nova Data Analytics | Simulated dataset for illustration") +
   base_theme
 
-ggsave("/home/claude/novadata_case_study/chart5_seasonality.png", p5,
+ggsave("chart5_seasonality.png", p5,
        width=9, height=5, dpi=150, bg="white")
 cat("Chart 5 saved\n")
 
@@ -207,6 +207,5 @@ cat("Top Fund:          ", by_fund_year %>% group_by(fund) %>% summarise(t=sum(t
       arrange(desc(t)) %>% slice(1) %>% pull(fund), "\n")
 cat("Top Donor Type:    ", by_type$donor_type[1], paste0("(", round(by_type$pct[1],1), "%)"), "\n")
 
-write.csv(donations, "/home/claude/novadata_case_study/dataset_donations.csv", row.names=FALSE)
-write.csv(donors,    "/home/claude/novadata_case_study/dataset_donors.csv",    row.names=FALSE)
-cat("\nCSV datasets saved.\n")
+write.csv(donations, "dataset_donations.csv", row.names=FALSE)
+write.csv(donors,    "dataset_donors.csv",    row.names=FALSE)
