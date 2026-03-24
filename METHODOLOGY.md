@@ -1,5 +1,5 @@
 # Analytical Methodology
-### Novadata Analytics | Hope Forward NGO Case Study
+### Novadata Analytics | ThriveBridge NGO Case Study
 
 This document explains the analytical approach, tool choices, and key decisions made during this engagement.
 
