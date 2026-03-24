@@ -56,7 +56,7 @@ novadata-ngo-case-study/
 │   └── 03_reload.sql           ← Safe TRUNCATE + COPY reload script
 │
 ├── r/
-│   └── analysis.R              ← Full R analysis + 5 ggplot2 charts
+    └── analysis.R              ← Full R analysis + 5 ggplot2 charts
 
 ```
 
@@ -135,7 +135,7 @@ Novadata Analytics is a South African data analytics firm helping NGOs, business
 
 - **Website:** [www.novadataanalytics.co.za](https://www.novadataanalytics.co.za)
 - **LinkedIn:** [Novadata Analytics](https://www.linkedin.com/company/novadata-analytics)
-- **Email:** info@novadataanalytics.co.za
+- **Email:** info@novadataanalytics.co.za 
 
 ---
 
