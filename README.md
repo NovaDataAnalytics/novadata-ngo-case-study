@@ -1,5 +1,5 @@
 # Donor Data Management — NGO Case Study
-### Novadata Analytics | Hope Forward NGO (Simulated)
+### Novadata Analytics | ThriveBridge NGO (Simulated)
 
 > **Focus keyword:** Donor data management South Africa  
 > **Sector:** Non-profit / NGO  
@@ -17,7 +17,7 @@ Many South African NGOs and NPOs manage donor data across disconnected spreadshe
 
 ## The Problem
 
-Hope Forward NGO (a simulated client) experienced:
+ThriveBridge NGO (a simulated client) experienced:
 
 - Donor records spread across multiple Excel files and staff members
 - No ability to identify lapsed or at-risk donors
@@ -144,5 +144,5 @@ Novadata Analytics is a South African data analytics firm helping NGOs, business
 ## Licence
 
 This repository is shared for educational and portfolio purposes.  
-The dataset is entirely simulated — Hope Forward NGO is a fictional organisation.  
+The dataset is entirely simulated — ThriveBridge NGO is a fictional organisation.  
 © 2025 Novadata Analytics. All rights reserved.
